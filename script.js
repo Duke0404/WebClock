@@ -7,7 +7,11 @@ function updateClock () {
     var currentMinutes = totalTime.getMinutes();
     var currentSeconds = totalTime.getSeconds();
 
+    //12hr clock
+    currentHours = (currentHours > 12 ? currentHours - 12 : currentHours);
+
     //Padding with 0
+    currentHours = (currentSeconds < 10 ? "0" : "") + currentHours;
     currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
     currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
 
