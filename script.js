@@ -1,3 +1,6 @@
 var totalTime = new Date();
-var clock1 = totalTime.getHours() + ":" + totalTime.getMinutes() + ":" + totalTime.getHours() + ":";
+var currentHours = totalTime.getHours();
+var currentMinutes = totalTime.getMinutes();
+var currentSeconds = totalTime.getSeconds();
+var clock1 = currentHours + ":" + currentMinutes + ":" + currentSeconds;
 document.getElementById("clock1").innerHTML = clock1;
