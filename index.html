@@ -5,7 +5,7 @@
         <meta name="description" content="A sample clock made using Javascript">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body onload="updateClock(); setInterval('updateClock()', 1000 )">
         <span id="clock1">
             Placeholder
         </span>
