@@ -7,6 +7,10 @@ function updateClock () {
     var currentMinutes = totalTime.getMinutes();
     var currentSeconds = totalTime.getSeconds();
 
+    //Padding with 0
+    currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+    currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
+
     //Format data
     var clock1 = currentHours + ":" + currentMinutes + ":" + currentSeconds;
 
