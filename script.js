@@ -1,0 +1,1 @@
+var totalTime = new Date()
